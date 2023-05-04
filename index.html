@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="overlay"></div>
+      <div class="game__heading">
+        <div class="game__heading-title">Rock Paper scisors lizard spock</div>
+        <div class="game__heading-score">
+          <span>Score</span>
+          <div class="number">5</div>
+        </div>
+      </div>
+      <div class="game__playground">
+        <div class="game__playground-item" id="scissors">
+          <div class="game__playground-item--inner-circle">
+            <img src="images/icon-scissors.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="double first-double">
+          <div class="game__playground-item" id="spock">
+            <div class="game__playground-item--inner-circle">
+              <img src="images/icon-spock.svg" alt="" />
+            </div>
+          </div>
+          <div class="game__playground-item" id="paper">
+            <div class="game__playground-item--inner-circle">
+              <img src="images/icon-paper.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="double second-double">
+          <div class="game__playground-item" id="lizard">
+            <div class="game__playground-item--inner-circle">
+              <img src="images/icon-lizard.svg" alt="" />
+            </div>
+          </div>
+          <div class="game__playground-item" id="rock">
+            <div class="game__playground-item--inner-circle">
+              <img src="images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game__rules--button">
+        <button type="button" class="game__rules--button-btn">Rules</button>
+      </div>
+      <div class="popup__rules">
+        <div class="popup__rules-heading">
+          <h3>Rules</h3>
+        </div>
+        <div class="popup__rules-image">
+          <img src="images/image-rules-bonus.svg" alt="" />
+        </div>
+        <button class="popup__rules-closebtn">
+          <img src="images/icon-close.svg" alt="" />
+        </button>
+      </div>
+      <div class="finish">
+        <h1></h1>
+        <p></p>
+        <button class="play-again">play Again</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
